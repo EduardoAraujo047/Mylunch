@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #ca0000;
+    font-family: 'Roboto', sans-serif;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 100px;
+}
+
+header #filtro{
+    border: solid 2px #fff;
+    border-radius: 15px;
+    font-size: 25px;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+
+    transition: 0.2s;
+}
+
+header #filtro:hover{
+    cursor: pointer;
+    background-color: #dd6b6b;
+}
+
+
+header #filtro img{
+    margin: 0 10px 0 0;
+    width: 40px;
+}
+
+header #pesquisa{
+    width: 65%;
+    font-size: 24px;
+    color: #fff;
+}
+
+header #pesquisa input{
+    width: 50%;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+
+    padding: 0 10px;
+    font-size: 18px;
+    outline: none;
+
+    background-image: url(./assets/search.png);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+}
+
+header #pesquisa p{
+    width: 27%;
+    font-weight: 700;
+    margin: 0 10px 0 0;
+}
+
+main{
+    margin: auto;
+    margin-top: 15px;
+    width: 90%;
+}
+
+main #banner h3, main #cardapio h3{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #2e1515;
+    margin-bottom: 5px;
+}
+
+main #banner img{
+    width: 100%;
+    height: 500px;
+    filter: brightness(75%);
+}
+
+main #banner #promocao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    margin: auto;
+
+    z-index: 2;
+    margin-top: -350px;
+    filter: brightness(100%);
+
+    margin-bottom: 250px;
+}
+
+main #banner #promocao h3{
+    width: 250px;
+    color: #fff;
+}
+
+main #banner #promocao button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    background: #8d0909;
+    
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+main #banner #promocao button:hover{
+    background: #c04343;
+}
+
+main #cardapio #itens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #cardapio #itens .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: solid 2px #521414;
+    border-radius: 10px;
+    width: 48%;
+    height: 130px;
+
+    margin-bottom: 10px;
+}
+
+main #cardapio #itens .card img{
+    width: 25%;
+    height: 100%;
+}
+
+main #cardapio #itens .card .descricao{
+    margin: 0 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main #cardapio #itens .card .descricao h3, main #cardapio #itens .card .descricao h3{
+    margin: 8px 0;
+
+    font-family: 'Roboto', sans-serif;
+    color: #5f1f1f;
+}
+
+main #cardapio #itens .card .qtd-valor .valor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #13ac39;
+    margin-right: 15px;
+}
+
+main #cardapio #itens .card .qtd-valor .qtd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main #cardapio #itens .card .qtd-valor .qtd p{
+    background: #5f1f1f;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+
+    width: 30px;
+    cursor: pointer;
+}
+
+main #cardapio #itens .card .qtd-valor .qtd .sub{
+    border-radius: 5px 0 0 5px;
+    transition: 0.2s;
+
+}
+
+main #cardapio #itens .card .qtd-valor .qtd .add{
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s;
+}
+
+main #cardapio #itens .card .qtd-valor .qtd .quantia{
+    background: #bbbbbb ;
+    color: #000;
+    
+    cursor: default;
+}
+
+main #cardapio #itens .card .qtd-valor .qtd .sub:hover, 
+main #cardapio #itens .card .qtd-valor .qtd .add:hover{
+    background: #9b3535;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #ca0000;
+    padding: 20px 0;
+}
+
+footer #links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #links img{
+    width: 40px;
+    padding-top: 5px;
+
+    cursor: pointer;
+}
+
+footer #logo img{
+    width: 120px;
+    cursor: pointer;
+}
+
+footer #logo, footer #links{
+    width: 25%;
+    text-align: center;
+}
+
+footer #pedido img{
+    width: 40px;
+}
+
+footer #pedido{
+    width: 50%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+footer #pedido h3, footer #pedido p{
+    padding: 2px 0;
+}
+
+footer #pedido button{
+    border: 0;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    
+    margin: 5px 0;
+
+    transition: 0.2s;
+}
+
+footer #pedido #pedir{
+    background: #2c0606;
+}
+
+footer #pedido #pedir:hover{
+    background: #631414;
+}
+
+footer #pedido #cadastrar{
+    background: #279144;
+}
+
+footer #pedido #cadastrar:hover{
+    background: #3bb45b;
+}
+
+footer #pedido input{
+    padding-left: 10px;
+    width: 350px;
+    height: 30px;
+
+    border: 0;
+    border-radius: 5px;
+
+    font-size: 18px;
+    color: #2c0606;
+    outline: none;
+
+    background-image:url(./assets/email.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+}
